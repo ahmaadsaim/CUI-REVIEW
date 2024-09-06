@@ -4,7 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const MainCompo = () => {
-  const teachers = ['John Doe', 'Jane Smith', 'Alice Johnson', 'Bob Brown'];
+  const teachers = [
+  'Muhammad Shahzad Khurram', 'Aamir Ali', 'Aamir Qamar', 'Aamir Sanaullah', 
+  'Aamir Shahzad', 'Aasia Nusrat', 'Abbas Javed', 'Abda Khalid', 
+  'Abdul Farooq', 'Abdul Haque', 'Abdul Jabbar Shah', 'Abdul Jawad', 
+  'Abdul Majid', 'Abdul Mannan', 'Abdul Nasir Khan', 'Abdul Qayyum Khan'
+];
   const [selectedTeacher, setSelectedTeacher] = useState('');
   const [review, setReview] = useState('');
   const [rating, setRating] = useState(null);
