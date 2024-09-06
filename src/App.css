@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure the mobile menu is hidden by default */
+.hidden {
+    display: none;
+}
+
+/* Show the mobile menu on smaller screens */
+.md\:block {
+    display: block;
+}
+
+/* Mobile menu styling */
+.md\:block .fixed {
+    display: block;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .mycontainer {
+        flex-direction: row; /* Ensure horizontal alignment */
+        align-items: center; /* Center items vertically */
+    }
+
+    .logo {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .text-xl {
+        font-size: 1.25rem; /* Adjust font size for mobile */
+    }
+
+    .text-2xl {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+}
+
+/* Ensure the mobile menu slides in and out smoothly */
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+/* Hide the mobile menu by default */
+.md\:hidden {
+    display: none;
+}
