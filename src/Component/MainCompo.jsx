@@ -124,6 +124,9 @@ const MainCompo = () => {
                 </option>
               ))}
             </select>
+            <p className='text-white'>
+              if teacher is not present. <span onClick={handleSubmitButton} className='font-bold'>CLICK TO ADD</span>
+            </p>
 
             <label htmlFor="review" className="mt-6 text-lg font-medium text-white">
               Write Your Review:
@@ -165,9 +168,6 @@ const MainCompo = () => {
             </div>
 
             <p className="text-white font-semibold mt-2">Your reviews are added with full <span className='font-extrabold'>Privacy</span>.</p>
-            <p className='text-white'>
-              if teacher is not present. <span onClick={handleSubmitButton} className='font-bold'>CLICK TO ADD</span>
-            </p>
             <button
               onClick={handleSubmitButton}
               disabled={!selectedTeacher || !review || !rating}
